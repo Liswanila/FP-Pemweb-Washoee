@@ -1,0 +1,275 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent !important;
+    transition: background-color 0.5s ease, border-color 0.3s ease;
+    border: none;
+    padding: 1rem 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important; /* Text color */
+    font-weight: bold; /* Optional: Adjust font weight */
+    text-transform: uppercase; /* Optional: Uppercase text */
+    position: relative; /* Required for the line effect */
+    margin-right: 1rem; /* Optional: Adjust spacing */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar-dark .navbar-nav .nav-link::after {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Position relative to the parent link */
+    width: 0; /* Initially no width */
+    height: 2px; /* Line thickness */
+    background-color: #9BBEC8; /* Line color */
+    bottom: -2px; /* Position the line below the text */
+    left: 0; /* Align with the left edge */
+    transition: width 0.3s ease-in-out; /* Smooth transition for line width */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black !important; /* Text color on hover */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1) !important; /* Toggler border color */
+}
+
+.solid-navbar {
+    background-color: #164863 !important;
+    transition: background-color 0.5s ease;
+}
+
+
+.hero {
+    background-image: url('../images/home-bg.jpg');;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin-top: -56px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.display-4{
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    max-width: 670px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease-out;
+    z-index: 1;
+}
+
+.shoe-overlay {
+    position: absolute;
+    top: 20%; /* Adjust the top position for the overlay */
+    left: 50%; /* Adjust the left position for centering */
+    transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
+    width: 40%; /* Adjust the width as needed */
+    max-width: 500px; /* Set a max-width for responsiveness */
+    z-index: 2; /* Ensure it stays above .hero-content */
+}
+
+@keyframes floatInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease-out;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+.about,
+.services,
+.contact {
+    padding: 50px 0;
+}
+
+.service-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contact {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+.contact a {
+    color: #fff;
+}
+
+.about-us-image {
+    max-width: 100%;
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-desc {
+    color: #164863;
+}
+
+.hero-title {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.hero-text {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.custom-btn {
+    background-color: #427D9D;
+    color: white;
+    border-color: #427D9D;
+}
+
+.custom-btn:hover {
+    background-color: white;
+    color: #164863;
+}
+
+.custom-btn-service {
+    background-color: white;
+    color: #164863;
+    border-color: #427D9D;
+}
+
+.custom-btn-service:hover {
+    background-color: #427D9D;
+    color: white;
+}
+
+.custom-btn-contact{
+    background-color: #164863;
+    color: white;
+    border-color: #427D9D;
+}
+
+.custom-btn-contact:hover{
+    background-color: white;
+    color: #164863;
+    border-color: #427D9D;
+}
+
+.step-by-step .step-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step-by-step .step-item h4 {
+    font-size: 2rem;
+    color: #164863;
+}
+
+.step-by-step .step-item h5 {
+    font-size: 1.25rem;
+    color: #164863;
+    margin-bottom: 10px;
+}
+
+.step-by-step .step-item p {
+    color: #6c757d;
+}
+
+.step-by-step .step-item a {
+    color: #427D9D;
+    text-decoration: none;
+}
+
+.step-by-step .step-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .step-by-step .step-item {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+        margin-left: 2%;
+        width: 100%;
+    }
+
+    .hero-text {
+        font-size: 0.8rem;
+        margin-left: 2%;
+        width: 100%;
+    }
+}

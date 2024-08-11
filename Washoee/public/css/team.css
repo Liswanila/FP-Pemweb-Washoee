@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../images/team-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+}
+
+.hero-section .breadcrumb {
+    background: transparent;
+}
+
+/* Team Introduction */
+.team-intro {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.team-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.team-intro p {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Team Section */
+.team-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member h4 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #555;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Keyframes for animations */
+@keyframes floatInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.float-in-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease-out;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .team-member {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .team-member {
+        margin: 15px 0;
+        padding: 20px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-member h4 {
+        font-size: 1.1rem;
+    }
+
+    .team-member p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .team-member {
+        padding: 15px;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-member h4 {
+        font-size: 1rem;
+    }
+
+    .team-member p {
+        font-size: 0.8rem;
+    }
+}

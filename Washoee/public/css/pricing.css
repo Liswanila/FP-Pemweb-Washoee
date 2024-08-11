@@ -1,0 +1,154 @@
+/* Styles for Pricing Page */
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved readability */
+    background-color: #f9f9f9; /* Background color for the body */
+}
+
+.hero-section {
+    background-image: url('../images/pricing-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0 10px; /* Adjust padding as needed */
+}
+
+.hero-section{
+    text-align: center;
+    color: #fff; /* Text color for the hero section */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Adjust heading size */
+}
+
+.hero-section .breadcrumb {
+    background: transparent; /* Transparent background for breadcrumbs */
+}
+
+#pricing {
+    padding: 80px 0;
+}
+
+.col-lg-12{
+    color: #164863;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #164863;
+}
+
+.card-price {
+    font-size: 2rem;
+    color: #427D9D;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.custom-btn-service {
+    background-color: white;
+    color: #427D9D;
+    border-color: #427D9D;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn-service:hover {
+    background-color: #427D9D;
+    color: white;
+}
+
+/* Styles for Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #427D9D;
+    color: #fff;
+    text-align: center;
+}
+
+.contact a {
+    color: #fff;
+}
+
+.custom-btn-contact{
+    background-color: #164863;
+    color: white;
+    border-color: #427D9D;
+}
+
+.custom-btn-contact:hover{
+    background-color: white;
+    color: #164863;
+    border-color: #427D9D;
+}
+
+@keyframes floatInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.float-in-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease-out;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-price {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .custom-btn-service {
+        padding: 8px 20px;
+    }
+
+    #contact .btn {
+        padding: 8px 20px;
+    }
+}

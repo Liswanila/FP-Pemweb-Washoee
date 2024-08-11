@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../images/faqs-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+}
+
+.hero-section .breadcrumb {
+    background: transparent;
+}
+
+.faqs-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.faqs-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #164863;
+}
+
+.accordion .card {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+.accordion .card-header {
+    background-color: #427D9D;
+    color: #fff;
+}
+
+.accordion .btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion .card-body {
+    background-color: #fff;
+    color: #164863;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.regular-questions-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.regular-questions-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #164863;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.list-group-item h5 {
+    margin-bottom: 10px;
+    color: #427D9D;
+}
+
+@keyframes floatInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.float-in-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease-out;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .faqs-section h2,
+    .regular-questions-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .accordion .btn-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .faqs-section h2,
+    .regular-questions-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .accordion .btn-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    .faqs-section h2,
+    .regular-questions-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    .accordion .btn-link {
+        font-size: 0.8rem;
+    }
+    .list-group-item h5 {
+        font-size: 1rem;
+    }
+}

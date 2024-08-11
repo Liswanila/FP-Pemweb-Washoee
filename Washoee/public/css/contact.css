@@ -1,0 +1,118 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved readability */
+    background-color: #f9f9f9; /* Background color for the body */
+}
+
+.hero-section {
+    background-image: url('../images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0 10px; /* Adjust padding as needed */
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Adjust heading size */
+}
+
+.hero-section .breadcrumb {
+    background: transparent; /* Transparent background for breadcrumbs */
+}
+
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+    color: #164863;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact-section .fa {
+    color: #007bff;
+}
+
+.contact-section p {
+    color: #164863;
+}
+
+.custom-icon {
+    color: white !important;
+}
+
+.custom-icon-contact {
+    color: #164863 !important;
+}
+
+.social-media-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #427D9D;
+    color: white;
+}
+
+.social-media-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.social-icon {
+    color: #007bff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+    transform: scale(1.2);
+}
+
+.location-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.embed-responsive {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.5rem; /* Decrease heading size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem; /* Further decrease heading size for tablets */
+    }
+
+    .contact-section h2 {
+        font-size: 2rem; /* Adjust heading size in contact section */
+    }
+
+    .social-media-section h2 {
+        font-size: 2rem; /* Adjust heading size in social media section */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.8rem; /* Adjust heading size for smaller devices */
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem; /* Further adjust heading size in contact section */
+    }
+
+    .social-media-section h2 {
+        font-size: 1.8rem; /* Further adjust heading size in social media section */
+    }
+}

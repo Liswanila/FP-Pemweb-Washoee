@@ -1,0 +1,348 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1.6; /* Improved readability */
+    background-color: #f9f9f9; /* Background color for the body */
+}
+
+@keyframes floatInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.float-in-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease-out;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+/* Hero Section */
+.hero-section {
+    color: #fff;
+    text-align: center;
+    padding: 120px 0 80px; /* Adjusted padding */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -24px; /* Adjusted margin */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Adjusted font size */
+}
+
+.hero-section .breadcrumb {
+    background: transparent;
+}
+
+.hero-section .breadcrumb-item a {
+    color: #fff;
+}
+
+.hero-section .breadcrumb-item.active {
+    color: #fff;
+}
+
+/* Our Service Section */
+.our-service {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.our-service h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-box {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    min-height: 320px; /* Increased minimum height for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-btn {
+    background-color: #427D9D;
+    border-color: #427D9D;
+}
+
+.service-btn:hover {
+    background-color: white;
+    color: #164863;
+}
+
+.service-icon {
+    margin: 0 auto; /* Center aligns the icon horizontally */
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon img {
+    width: 40px; /* Adjusted icon size */
+    height: 40px;
+}
+
+.service-box h4 {
+    margin-top: 20px; /* Adjusted margin for title */
+    font-size: 1.2rem; /* Font size for service titles */
+}
+
+.service-box p {
+    font-size: 1rem; /* Font size for service descriptions */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Step by Step Section */
+.step-by-step {
+    padding: 40px 0; /* Adjusted padding */
+    text-align: center;
+    background-color: #DDF2FD;
+}
+
+.step-by-step h2 {
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.step-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.step-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Detailed Service Section */
+.detailed-service {
+    padding: 40px 0; /* Adjusted padding */
+    text-align: center;
+}
+
+.detailed-service h2 {
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.service-detail-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.service-detail-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-detail-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #164863;
+}
+
+.service-detail-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    flex-grow: 1; /* Makes the paragraph take the available space */
+}
+
+.service-detail-box .btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.service-detail-box .btn-link:hover {
+    text-decoration: underline;
+}
+
+.service-detail-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure equal height columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6, .col-lg-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 40px 0; /* Adjusted padding */
+    text-align: center;
+}
+
+.experience-section h2 {
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.experience-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.experience-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-box h3 {
+    font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 10px; /* Adjusted margin */
+}
+
+.custom-btn-contact{
+    background-color: #164863;
+    color: white;
+    border-color: #427D9D;
+}
+
+.custom-btn-contact:hover{
+    background-color: white;
+    color: #164863;
+    border-color: #427D9D;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .our-service h2,
+    .step-by-step h2,
+    .detailed-service h2,
+    .experience-section h2 {
+        font-size: 2rem;
+    }
+
+    .service-box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        position: relative; /* Ensure icons are positioned relative to this box */
+    }
+
+    .experience-box h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 80px 0 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .our-service h2,
+    .step-by-step h2,
+    .detailed-service h2,
+    .experience-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-box,
+    .step-box,
+    .service-detail-box,
+    .experience-box {
+        padding: 10px;
+    }
+
+    .experience-box h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 60px 0 40px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .our-service h2,
+    .step-by-step h2,
+    .detailed-service h2,
+    .experience-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-box,
+    .step-box,
+    .service-detail-box,
+    .experience-box {
+        padding: 8px;
+    }
+
+    .experience-box h3 {
+        font-size: 1.4rem;
+    }
+}

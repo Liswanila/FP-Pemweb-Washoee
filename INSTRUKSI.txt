@@ -1,0 +1,63 @@
+INSTRUKSI:
+Prasyarat
+Untuk menjalankan proyek ini, Anda perlu memiliki perangkat lunak berikut yang terinstal di komputer Anda:
+- XAMPP (https://www.apachefriends.org/)
+- Composer (https://getcomposer.org/)
+- Laravel (https://laravel.com/)
+
+Instruksi Instalasi
+1. Menyiapkan XAMPP
+   1) Unduh dan Instal XAMPP:
+	- Kunjungi situs XAMPP dan unduh versi yang sesuai untuk sistem operasi Anda.
+	- Instal XAMPP dengan mengikuti panduan instalasi.
+
+   2) Mulai Apache dan MySQL:
+	- Buka XAMPP Control Panel.
+	- Mulai layanan Apache dan MySQL.
+
+2. Menyiapkan Proyek
+   1) Unduh File Proyek:
+	- Unduh file proyek Washoee dari link Google Drive yang diberikan.
+	- Ekstrak file ke direktori htdocs di instalasi XAMPP Anda (misalnya, C:\xampp\htdocs\Washoee).
+
+   2) Menyiapkan Basis Data:
+	- Buka XAMPP Control Panel dan klik tombol Admin di sebelah MySQL untuk membuka 	phpMyAdmin.
+	- Di phpMyAdmin, buat database baru dengan nama washoee_db.
+	- Impor file database yang terletak di direktori proyek: C:\xampp\htdocs\Washoee	\database\washoee_db.sql
+
+   3) Instal Laravel dan Dependensi Composer:
+	- Buka command prompt atau terminal.
+	- Navigasikan ke direktori proyek (misalnya gunakan command pada terminal: 'cd C:	\xampp\htdocs\Washoee').
+	- Jalankan perintah 'composer install' untuk menginstal semua dependensi yang diperlukan.
+
+   4) Konfigurasi File Environment:
+	- Ubah nama file .env.example menjadi .env.
+	- Buka file .env dalam editor teks dan perbarui baris berikut untuk menyesuaikan 	dengan lingkungan lokal Anda:
+	.env:
+	DB_CONNECTION=mysql
+	DB_HOST=127.0.0.1
+	DB_PORT=3306
+	DB_DATABASE=washoee_db
+	DB_USERNAME=root
+	DB_PASSWORD=
+
+   5) Menjalankan Migrasi Basis Data:
+	- Di command prompt atau terminal, jalankan perintah 'php artisan migrate'.
+
+3. Menjalankan Proyek
+
+   1) Menjalankan Aplikasi:
+	- Di command prompt atau terminal, jalankan perintah 'php artisan serve'.
+	- Ini akan memulai server pengembangan lokal. Catat alamat servernya (misalnya, 	http://127.0.0.1:8000).
+
+   2) Mengakses Proyek:
+	- Buka browser web dan pergi ke alamat server (misalnya, http://127.0.0.1:8000).
+	- Anda seharusnya melihat halaman beranda Washoee.
+
+4. Informasi Tambahan
+1) Aset Publik: Pastikan direktori public berisi semua aset yang diperlukan seperti CSS, JavaScript, dan gambar.
+2) Template Blade: File template Blade terletak di direktori resources/views.
+3) Controller dan Rute: Controller terletak di direktori app/Http/Controllers.
+4) Rute didefinisikan dalam file routes/web.php.
+5) File CSS: File CSS khusus terletak di direktori public/css.
+6) Kami menggunakan Laravel sebagai Framework jadi harus menginstall php, Laravel, composer, dll.
